@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">Animal</th>
+
+            <th colspan="2">Average Mass</th>
+            <th rowspan="2">Flighted</th>
+          </tr>
+          <tr>
+            <th>KG</th>
+            <th>LB</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>data1</td>
+            <td>data2</td>
+            <td>data3</td>
+            <td>data</td>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form action="/tacos">
+      <h2>Form</h2>
+      <div>
+        <label for="color"> pick a color!</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <div>
+        <label for="num">Enter a number</label>
+        <input type="number" name="num" id="num" />
+      </div>
+
+      <div>
+        <label for="firstname">Enter First Name:</label>
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+      <!-- doesn't submit form if type is button -->
+      <button type="button">Does Not Submit</button>
+      <button>Does Submit</button>
+    </form>
+
+    <form action="https://www.reddit.com/search/">
+      <input type="text" name="q" />
+      <button>Reddit Search</button>
+    </form>
+
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Google Search</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>Youtube Search</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/shirts">
+      <input type="radio" name="size" id="s" value="s" />
+      <label for="s">Small</label>
+
+      <input type="radio" name="size" id="m" value="m" />
+      <label for="m">Medium</label>
+
+      <input type="radio" name="size" id="l" value="l" />
+      <label for="l">Large</label>
+
+      <div>
+        <label for="meal">Please Select a Meal Type:</label>
+        <select name="meal" id="meal">
+          <option value="veg">Veggetarian</option>
+          <option value="fish">fish</option>
+          <option value="meat" selected>Steak</option>
+        </select>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

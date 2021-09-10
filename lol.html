@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Refresher</title>
+  </head>
+  <body>
+    <h2>Table Stuff</h2>
+    <!-- table -->
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Band</th>
+          <th rowspan="2">Member</th>
+          <th colspan="2">Role</th>
+        </tr>
+        <tr>
+          <th>Main</th>
+          <th>Lead</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Blackpink</td>
+          <td>Jennie</td>
+          <td>Rapper</td>
+          <td>singer</td>
+        </tr>
+        <tr>
+          <td>Blackpink</td>
+          <td>Jisoo</td>
+          <td>Visuals</td>
+          <td>singer</td>
+        </tr>
+        <tr>
+          <td>Blackpink</td>
+          <td>Rose</td>
+          <td>Singer</td>
+          <td>dancer</td>
+        </tr>
+        <tr>
+          <td>Blackpink</td>
+          <td>Lisa</td>
+          <td>Dancer</td>
+          <td>rapper</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Form Stuff</h2>
+
+    <!-- form and different inputs and buttons -->
+    <form action="/inputs">
+      <div>
+        <label for="username">Enter Username:</label>
+        <!-- name is what gets sent to the server -->
+        <input type="text" name="username" id="username" />
+      </div>
+
+      <div>
+        <label for="num">Enter Your Fav Number from 1-10:</label>
+        <input type="number" name="num" id="num" min="0" max="10" />
+      </div>
+
+      <div>
+        <label for="intro">About Yourself</label>
+        <textarea name="intro" id="intro" cols="20" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label for="color">Pick your favorite color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+
+      <div>
+        <!-- some inputs need value to send to the server along with name -->
+        <input type="radio" name="size" id="small" value="small" />
+        <label for="small">Small</label>
+
+        <input type="radio" name="size" id="med" value="med" />
+        <label for="med">Medium</label>
+
+        <input type="radio" name="size" id="large" value="large" />
+        <label for="large">Large</label>
+      </div>
+
+      <div>
+        <label for="cool">How Cool Are you?</label>
+        <input type="range" name="cool" id="cool" min="0" max="10" step="2" />
+      </div>
+
+      <div>
+        <label for="drink">Choose Your Drink</label>
+        <select name="drink" id="drink">
+          <option value="milktea">Milk Tea</option>
+          <option value="fruit">Fruit Tea</option>
+          <option value="choco" selected>Choco Milk</option>
+        </select>
+      </div>
+
+      <!-- type button doesn't submit -->
+      <button type="button">Does Not Submit</button>
+      <button>submit</button>
+    </form>
+
+    <h2>Hijack Search Engine</h2>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" id="youtube" />
+
+      <button>Search Youtube</button>
+    </form>
+  </body>
+</html>
