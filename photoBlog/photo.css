@@ -1,0 +1,14 @@
+nav {
+    border-bottom: 1px solid rgb(180, 177, 177);
+    width: 30%;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+img {
+    width: 30%;
+    height: 450px;
+    margin: 1rem 1.5rem;
+    box-sizing: border-box;
+}
