@@ -1,0 +1,66 @@
+/* positions: static, relative, absolute, fixed, sticky */
+.relative {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: cornflowerblue;
+}
+
+.relative:nth-of-type(1) {
+    background-color: crimson;
+    position: relative;
+    top: 150px;
+    left: 500px;
+}
+
+.relative div {
+    background-color: #000;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 300px;
+}
+
+.relative:nth-of-type(2) {
+    background-color: rgb(87, 13, 28);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.relative:nth-of-type(3) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 139, 139, 0.8);
+}
+.relative:nth-of-type(4) {
+    position: relative;
+    top: 400px;
+    left: 150px;
+}
+.relative:nth-of-type(5) {
+    position: relative;
+    top: 500px;
+    left: 250px;
+}
+.relative:nth-of-type(6) {
+    position: relative;
+    top: 500px;
+    left: 350px;
+
+}
+.relative:nth-of-type(7) {
+    position: relative;
+    top: 400px;
+    left: 450px;
+
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
