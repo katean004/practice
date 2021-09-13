@@ -16,8 +16,7 @@ h1 {
 
 #one {
     background-color: #264653;
-    transform: rotate(45deg);
-    transform-origin: top left;
+    transform: scale(0.9) skewY(20deg) translateX(500px) translateY(100px);
 }
 
 #two {
@@ -28,16 +27,20 @@ h1 {
 
 #three {
     background-color: #e9c46a;
+    transform: skew(30deg);
 }
 
 #four {
     background-color: #f4a261;
+    transform: translateX(-300px) rotate(145deg);
 }
 
 #five {
     background-color: #e76f51;
+    transform: skewX(-30deg) scale(0.7) translateX(300px) rotate(15deg);
 }
 
 #six {
     background-color: #d62828;
+    transform: rotate(180deg) translateY(300px);
 }
