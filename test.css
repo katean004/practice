@@ -1,10 +1,20 @@
-div {
-    background-color: rgb(246, 206, 193);
-    height: 500px;
-    width: 500px;
+body {
+    margin: 0;
 }
 
+.nav {
+    background-color: rgb(246, 206, 193);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
 img {
-    height: 200px;
-    width: 180px;
+    height: 80px;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
